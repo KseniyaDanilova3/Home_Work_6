@@ -14,7 +14,7 @@ int b2 = int.Parse(Console.ReadLine()!);
 
 solution(k1, b1, k2, b2);
 
-void solution(int k1, int b1, int k2, int b2)
+void solution(double k1, double b1, double k2, double b2)
 {
     if ((k1 == k2) && (b1 == b2))
     {
@@ -24,8 +24,8 @@ void solution(int k1, int b1, int k2, int b2)
     Console.WriteLine("Прямые параллельны"); 
     else 
     {   
-        int x = (b1 - b2) / (k2 - k1);
-        int y = (k2 * b1 - k1 * b2) / (k2- k1);
+        double x = (b1 - b2) / (k2 - k1);
+        double y = (k2 * b1 - k1 * b2) / (k2- k1);
          Console.WriteLine($"Точка пересечения двух прямых: ({x}, {y})"); 
     }
 }  
